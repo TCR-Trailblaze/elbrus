@@ -2,8 +2,10 @@ import { Inter, Josefin_Sans, Jost } from 'next/font/google'
 import './globals.css'
 import Footer from './components/layout/Footer'
 import { TailwindIndicator } from './components/utils/breakpoint-indicator'
+import Navbar from './components/layout/navigation/navbar-clone'
+import DrawerComponent from './components/layout/navigation/Drawer'
 
-const josefin_sans = Josefin_Sans({ subsets: ['latin','latin-ext']})
+const josefin_sans = Josefin_Sans({ subsets: ['latin', 'latin-ext'] })
 const jost = Jost({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -13,7 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <TailwindIndicator />
       <head>
         <title>Tricora Trailblaze</title>
         <meta charSet="utf-8" />
@@ -37,10 +38,12 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      {/* <DrawerComponent/> */}
-      {/* <Navbar/> */}
-      <body className={jost.className}>{children}</body>
-      <Footer />
+      <body className={jost.className}>
+        <Navbar />
+        <TailwindIndicator />
+          {children}
+        <Footer />
+      </body>
     </html>
   )
 }

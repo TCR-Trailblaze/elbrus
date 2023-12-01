@@ -1,7 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MerchDetailPage = () => {
+
+    const checkoutTextGenerator = React.useMemo(() => {
+        let itemText = ''
+        const image = 'https://i.ibb.co/dG2HSt5/merch.png'
+        const textString = `Halo admin Magin, saya baru saja melakukan checkout melalui website, berikut keranjang saya,`
+        const textResult = `%0ADengan total sebesar 10000`
+        const reciverText = `Berikut alamat saya, Albar, Jlan h mando, Jakarta - Cilandak`
+
+        return (
+            textString.replace(' ', '%20') +
+            '%0A' +
+            textResult.replace(' ', '%20') +
+            '%0A' +
+            reciverText.replace(' ', '%20') + '%0A' +
+            image + "%20"
+        )
+    }, [])
+
     return (
         <div className="p-10">
             {/* media screen for LG - XL */}
@@ -92,9 +111,19 @@ const MerchDetailPage = () => {
                             in some form, by injected humour, or randomised
                             words which dont look even slightly believable.
                         </p>
-                        <button className="bg-[#292929] h-10 w-2/3 text-center text-lg text-white font-semibold">
-                            BUY
-                        </button>
+                        <Link
+                            className="bg-gray-100 hover:bg-blue-400 hover:text-white"
+                            rel="nofollow"
+                            href={`https://api.whatsapp.com/send?phone=6287788996343&text=${checkoutTextGenerator}`}
+                            data-action="share/whatsapp/share"
+                            title="WhatsApp"
+                            target='_blank'
+                        >
+
+                            <button className="bg-[#292929] h-10 w-2/3 text-center text-lg text-white font-semibold hover:bg-red-600">
+                                BUY
+                            </button>
+                        </Link>
                     </div>
                     <div className="space-y-2">
                         <h1 className="text-lg font-semibold">Product Tags</h1>
@@ -205,9 +234,19 @@ const MerchDetailPage = () => {
                                 alteration in some form, by injected humour, or
                                 randomised words whic
                             </p>
-                            <button className="bg-[#292929] h-10 w-full text-center text-lg text-white font-semibold hover:bg-red-500">
-                            BUY
-                        </button>
+                            <Link
+                                className="bg-gray-100 hover:bg-blue-400 hover:text-white"
+                                rel="nofollow"
+                                href={`https://api.whatsapp.com/send?phone=6285718484065&text=${checkoutTextGenerator}`}
+                                data-action="share/whatsapp/share"
+                                title="WhatsApp"
+                                target='_blank'
+                            >
+
+                                <button className="bg-[#292929] h-10 w-full text-center text-lg text-white font-semibold hover:bg-red-500">
+                                    BUY
+                                </button>
+                            </Link>
                             <div className="space-y-2 w-full">
                                 <h1 className="text-lg sm:text-xl font-semibold">
                                     Product Tags
