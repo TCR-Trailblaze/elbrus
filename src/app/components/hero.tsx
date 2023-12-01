@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import SwiperCarousel from './SwiperCarousel'
 import { motion } from "framer-motion"
+import Link from 'next/link'
 
 type Display = {
   id: string | number
@@ -36,9 +37,9 @@ const TextSection: React.FC<{ data: any }> = ({ data }) => {
         </section>
         <h2 className='grit text-3xl md:text-[60px] font-bold text-white leading-[95%] uppercase'>{data?.title}</h2>
         <p className='text-white font-light text-md'>{data?.description} Setelah menyelesaikan perintisan jalur multi pitch ditebing lawe Banjarnegara, Jawa Tengah, Tim java andesit marathon bergeser ke tebing sepikul Jawa Timur</p>
-        <a href="http://www.nature.org/new-wild/keep-hope-alive/" className="btn grit">
+        <Link href="/article" className="btn grit">
           Read More
-        </a>
+        </Link>
       </div>
     </motion.div>
   )
