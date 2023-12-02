@@ -77,17 +77,21 @@ const Recruitment = () => {
                     {/* TALENT INFORMATION */}
                     <form
                         action=""
-                        className=" border-solid border-[1px] border-[#E2E8F0] rounded p-5 space-y-7"
+                        className=" border-solid border-[4px] border-[#E2E8F0] rounded p-5 space-y-7"
                     >
                         <h1 className="text-xl font-medium">
                             Talent Information
+                            <hr />
                         </h1>
                         {LIST.map((input, index) => (
                             <div
                                 key={index}
-                                className="flex justify-between mx-20 pt-3 "
+                                className="flex justify-between space-x-5 "
                             >
-                                <label htmlFor="name" className="text-lg">
+                                <label
+                                    htmlFor="name"
+                                    className="text-lg w-32 flex flex-col justify-center "
+                                >
                                     {input.lable}
                                 </label>
                                 <input
@@ -103,13 +107,13 @@ const Recruitment = () => {
                     {/* OTHER INFORMATION */}
                     <form
                         action=""
-                        className=" border-solid border-[1px] border-[#E2E8F0] rounded p-5 space-y-7"
+                        className=" border-solid border-[4px] border-[#E2E8F0] rounded p-5 space-y-7"
                     >
                         <h1 className="text-xl font-medium">
                             Other Information
                         </h1>
-                        <div className="flex justify-between mx-20 pt-3 ">
-                            <label className="text-lg">
+                        <div className="flex justify-between space-x-5">
+                            <label className="text-lg w-32 flex flex-col justify-center">
                                 Alasan Masuk Tricora
                             </label>
                             <textarea
@@ -120,8 +124,8 @@ const Recruitment = () => {
                                 className="border-solid border-[1px] rounded p-3 h-30 border-slate-500 w-10/12"
                             />
                         </div>
-                        <div className="flex justify-between mx-20 pt-3 ">
-                            <label className="text-lg">
+                        <div className="flex justify-between space-x-5">
+                            <label className="text-lg w-32 flex flex-col justify-center">
                                 Pengalaman Kegiatan Outdoor
                             </label>
                             <textarea
@@ -132,8 +136,10 @@ const Recruitment = () => {
                                 className="border-solid border-[1px] rounded p-3 h-30 border-slate-500 w-10/12"
                             />
                         </div>
-                        <div className="flex justify-between mx-20 pt-3 ">
-                            <label className="text-lg">Riwayat Penyakit</label>
+                        <div className="flex justify-between space-x-2">
+                            <label className="text-lg w-32 flex flex-col justify-center">
+                                Riwayat Penyakit
+                            </label>
                             <div className="flex flex-col pl-3 h-30 w-10/12 space-y-5">
                                 <div className="space-x-6">
                                     <input type="checkbox" className="pt-2" />
@@ -155,8 +161,10 @@ const Recruitment = () => {
                             </div>
                         </div>
 
-                        <div className="flex justify-between mx-20 pt-3 ">
-                            <label className="text-lg">Upload Pass Photo</label>
+                        <div className="flex justify-between space-x-2 ">
+                            <label className="text-lg w-32 flex flex-col justify-center ">
+                                Upload Pass Photo
+                            </label>
                             <div className=" p-3 h-30 border-slate-500 w-5/6 h-44 ">
                                 <section className="w-96 h-full border-dashed border-2 border-slate-500 flex flex-col justify-center items-center  rounded-md">
                                     <Image
@@ -248,7 +256,7 @@ const Recruitment = () => {
                             />
                         </div>
 
-                        <div className=" flex justify-between  space-x-5">
+                        <div className=" flex justify-between space-x-5">
                             <label className="text-base flex items-center p-2 w-32">
                                 Riwayat Penyakit
                             </label>
