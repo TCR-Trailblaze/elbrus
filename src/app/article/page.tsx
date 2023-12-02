@@ -52,7 +52,7 @@ const ArticleDetailPage = () => {
                 </h1>
                 <section className="space-y-5">
                     <p>
-                        26 september 2023 <tr></tr>Setelah menyelesaikan
+                        26 september 2023 Setelah menyelesaikan
                         perintisan jalur multi pitch ditebing lawe Banjarnegara,
                         Jawa Tengah, Tim java andesit marathon bergeser ke
                         tebing sepikul Jawa Timur. berangkat menggunakan mobil
@@ -78,7 +78,7 @@ const ArticleDetailPage = () => {
                     </p>
 
                     <p>
-                        27september 2023 <tr></tr>Pagi hari pun tiba tim bangun
+                        27september 2023 Pagi hari pun tiba tim bangun
                         langsung menyalakan kompor untuk memasak sarapan pagi
                         dan tidak lama kemudian egi baru saja sampai dari
                         bandung, setelah sarapan pagi selesai tim langsung set
@@ -121,7 +121,7 @@ const ArticleDetailPage = () => {
                         dan lanjut tidur malam.
                     </p>
                     <p>
-                        28 september 2023<tr></tr>Pukul 06.00 pagi tim sudah
+                        28 september 2023 Pukul 06.00 pagi tim sudah
                         bangun dan langsung memasak sarapan pagi sambil set up
                         alat panjat, hari ini formasi pemanjatan abi sebagai
                         climber, eky sebagai belayer, egi sebagai suplayer. sama
@@ -194,7 +194,6 @@ const ArticleDetailPage = () => {
                 <div className="space-y-5 p-5 text-base" >
                     <h1 className="text-lg font-bold">Sepikul</h1>
                     <p>
-                        26 september 2023 <tr></tr>Setelah menyelesaikan
                         perintisan jalur multi pitch ditebing lawe Banjarnegara,
                         Jawa Tengah, Tim java andesit marathon bergeser ke
                         tebing sepikul Jawa Timur. berangkat menggunakan mobil
@@ -220,7 +219,6 @@ const ArticleDetailPage = () => {
                     </p>
 
                     <p>
-                        27 september 2023 <tr></tr> Pagi hari pun tiba tim bangun langsung
                         menyalakan kompor untuk memasak sarapan pagi dan tidak
                         lama kemudian egi baru saja sampai dari bandung, setelah
                         sarapan pagi selesai tim langsung set up alat panjat
@@ -263,7 +261,6 @@ const ArticleDetailPage = () => {
                         dan lanjut tidur malam.
                     </p>
                     <p>
-                        28 september 2023 <tr></tr>Pukul 06.00 pagi tim sudah bangun dan
                         langsung memasak sarapan pagi sambil set up alat panjat,
                         hari ini formasi pemanjatan abi sebagai climber, eky
                         sebagai belayer, egi sebagai suplayer. sama seperti

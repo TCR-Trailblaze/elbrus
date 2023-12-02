@@ -55,11 +55,10 @@ const HeroSlider = () => {
 
   return (
     <div className='relative h-screen overflow-hidden'>
-
       {playVideo &&
         <video
           id="background-video"
-          className="absolute inset-0 object-cover h-screen xl:h-auto transition-opacity duration-1000 ease-in opacity-100 transform"
+          className="absolute z-0 inset-0 object-cover h-screen xl:h-auto transition-opacity duration-1000 ease-in opacity-100 transform"
           loop
           autoPlay
           muted
