@@ -78,7 +78,7 @@ const JumboArticle = () => {
                     sebelumnya ia tidak bisa menemani karna ada urusan kerja.
                 </p>
                 <button className="w-44 h-10 bg-[#F92424] text-white font-semibold rounded-md hover:bg-red-800">
-                    <Link href={'/article'}>Read More</Link>
+                    <Link href={"/article"}>Read More</Link>
                 </button>
             </div>
             <div className="">

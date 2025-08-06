@@ -3,23 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 const MerchDetailPage = () => {
-
     const checkoutTextGenerator = React.useMemo(() => {
-        let itemText = ''
-        const image = 'https://i.ibb.co/dG2HSt5/merch.png'
-        const textString = `Halo admin Magin, saya baru saja melakukan checkout melalui website, berikut keranjang saya,`
-        const textResult = `%0ADengan total sebesar 10000`
-        const reciverText = `Berikut alamat saya, Albar, Jlan h mando, Jakarta - Cilandak`
+        let itemText = "";
+        const image = "https://i.ibb.co/dG2HSt5/merch.png";
+        const textString = `Halo admin Magin, saya baru saja melakukan checkout melalui website, berikut keranjang saya,`;
+        const textResult = `%0ADengan total sebesar 10000`;
+        const reciverText = `Berikut alamat saya, Albar, Jlan h mando, Jakarta - Cilandak`;
 
         return (
-            textString.replace(' ', '%20') +
-            '%0A' +
-            textResult.replace(' ', '%20') +
-            '%0A' +
-            reciverText.replace(' ', '%20') + '%0A' +
-            image + "%20"
-        )
-    }, [])
+            textString.replace(" ", "%20") +
+            "%0A" +
+            textResult.replace(" ", "%20") +
+            "%0A" +
+            reciverText.replace(" ", "%20") +
+            "%0A" +
+            image +
+            "%20"
+        );
+    }, []);
 
     return (
         <div className="p-10">
@@ -117,9 +118,8 @@ const MerchDetailPage = () => {
                             href={`https://api.whatsapp.com/send?phone=6287788996343&text=${checkoutTextGenerator}`}
                             data-action="share/whatsapp/share"
                             title="WhatsApp"
-                            target='_blank'
+                            target="_blank"
                         >
-
                             <button className="bg-[#292929] h-10 w-2/3 text-center text-lg text-white font-semibold hover:bg-red-600">
                                 BUY
                             </button>
@@ -240,9 +240,8 @@ const MerchDetailPage = () => {
                                 href={`https://api.whatsapp.com/send?phone=6285718484065&text=${checkoutTextGenerator}`}
                                 data-action="share/whatsapp/share"
                                 title="WhatsApp"
-                                target='_blank'
+                                target="_blank"
                             >
-
                                 <button className="bg-[#292929] h-10 w-full text-center text-lg text-white font-semibold hover:bg-red-500">
                                     BUY
                                 </button>
@@ -273,4 +272,3 @@ const MerchDetailPage = () => {
 };
 
 export default MerchDetailPage;
-

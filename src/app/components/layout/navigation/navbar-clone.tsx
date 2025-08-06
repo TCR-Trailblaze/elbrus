@@ -11,6 +11,7 @@ const Navbar = () => {
     // variable isOpen =  flaging (boolean) untuk buka tutup drawer
     // func open  =  buka drawer ex: open()
     // func close =  tutup drawer ex: close()
+
     const { isOpen, open, close } = useModalDisclosure();
 
     const [currentSection, setCurrentSection] = useState<string>("/");
@@ -58,7 +59,7 @@ const Navbar = () => {
                     />
                     </Link>
                 </div>
-                <div className=" text-white  font-semibold text-2xl w-11/12 flex justify-end items-center">
+                <div className="hidden  text-white  font-semibold text-2xl w-11/12 lg:flex justify-end items-center">
                     <div className="flex space-x-10 mx-10 ">
                         <Link href={"/merch"}>
                             <h1 className="cursor-pointer hover:text-gray-300">
